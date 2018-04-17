@@ -1,20 +1,72 @@
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+div#insta-wrapper {
+    max-width:80%;
+    
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+div.Header, div.Conent, div.HoverCard, div.FeedBack, div.SocialProof, div.Caption, div.Footer {
+    max-width:50%;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
+div.Header {
+    max-width:50%;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+div.container:hover img {
+    //opacity:0 !important;
+    border:10px solid;
+    padding:2px;
+    transition: all 0.5s ease;
+}
+
+div.container, div.wrapper, div.dominant, div.palletes, div.pallete, div.vibrant, div.vibrant-swatch, div.average {
+    display:inline-grid;
+    min-height: 50px;
+}
+
+div.container {
+    background:none !important;
+}
+
+div.container img {
+    margin: 0 auto;
+    margin-bottom:5px;
+    border:0px solid;    
+    padding: 12px;
+}
+
+div.wrapper span {
+    margin: 0 auto;
+}
+
+div.wrapper {
+    width: 25%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border-left: 1px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+div.dominant, div.average {
+    width: 30%;
+    margin: 0 auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+div.palletes {
+    display:table;
+    border-spacing: 5px;
+}
+
+div.pallete {
+    display: table-cell;
+}    
+
+div.vibrant {
+    display:table;
+    border-spacing: 5px;
+}
+
+div.vibrant-swatch {
+    display: table-cell;
 }
