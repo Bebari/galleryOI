@@ -1,6 +1,7 @@
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+//(function() {
+  //  document.addEventListener('DOMContentLoaded', function() {
 
+$(window).on("load", function() {
       var imageColorArray = rgbanalyse(".vibrant", { xoffset: 0.5, width: 0.5 }); //sort by hue
 
       /*imageColorArray.sort(function (a, b) {
@@ -63,8 +64,10 @@
       });
       document.getElementById("loadedImages").style = "display:none;";
       document.getElementById("colorified").innerHTML = imagesHtml;
-    });
-}).call(this);
+    //});
+});
+
+//}).call(this);
 
 function InstgramMediaPopup(elem, mediaUrl) {
     
