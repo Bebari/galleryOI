@@ -1,0 +1,174 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align:center;
+}
+
+/* The Close Button */
+.close {
+    color: #345271;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    opacity:1;
+    padding:7px 0;
+}
+
+.close:hover,
+.close:focus {
+    color: #778899;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/* Modal Body */
+.modal-body {
+    display: grid;
+    grid-template-columns: max-content 300px;
+    grid-column-gap: 10px;
+    padding:16px;
+}
+
+/* Modal ColorInfo */
+.modal-colorInfo {
+    display:grid;
+    grid-row-gap: 6px;
+}
+
+#ci-average {
+    position:relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#ci-control {
+    border-top: 1px solid #e5e5e5;
+}
+
+#ci-control button {
+    background-color: white;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-top: -3px;
+}
+
+#ci-control button:hover,
+#ci-control button.active {
+    background: #e5e5e5;
+}
+
+#ci-control i {
+    margin: 10px;
+}
+
+#ci-img-name {
+    margin: 10px 0px 5px 0px;
+}
+
+.swatch span {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    height: 45px;
+    padding-left: 10px;
+}
+#ci-vibrant {
+    display:grid;
+    grid-row-gap: 5px;
+}
+
+#ci-scheme-controls {
+    margin: 5px 0px 15px 5px;
+}
+.swatch, .swatchNoClick {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+}
+.swatch:hover {
+    cursor:pointer;
+}
+.swatch.active {
+    box-shadow: 2px 2px 8px grey;
+}
+
+/* Modal Image */
+.modal-image {
+    max-width: 35vw;
+}
+.modal-image img {
+    max-width:100%;
+}
+@media only screen and (max-width: 991px)  {
+
+}
+    .modal-body {
+       display: block; 
+    }
+    .modal-image {
+        max-width: 100%;
+        text-align:center;
+    }
+    .modal-colorInfo-wrapper {
+        margin-top:10px;
+    }
+
+/* Modal Header */
+.modal-header {
+    padding: 4px 16px;
+    background-color: #f5f5f5;
+    color: #345271;
+    box-shadow: 0px -2px 10px #345271;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 0;
+    border: 1px solid #888;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display:inline-block;
+    text-align:left;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.bd-example-modal-lg .modal-dialog{
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 24px);
+    
+  }
+  
+  .bd-example-modal-lg .modal-dialog .modal-content{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #1be9de;
+  }
