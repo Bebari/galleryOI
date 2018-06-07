@@ -20,8 +20,8 @@
             <link href="css/jquery.fancybox.css" rel="stylesheet">
             <link href="css/flickity.css" rel="stylesheet" >
             <link href="css/animate.css" rel="stylesheet">
-            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-            <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
             <link href="css/styles.css" rel="stylesheet">
             <link href="css/queries.css" rel="stylesheet">
             <link href="css/modal.css" rel="stylesheet">
